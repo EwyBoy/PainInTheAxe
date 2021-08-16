@@ -1,0 +1,67 @@
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="http://ganskesikkert.com/">
+      <img style="margin-top: -5px" src="assets/images/logo_transparent_sqr.png" alt="Logo" width="32" height="32">
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="http://ganskesikkert.com/">
+          <span class="icon"><i class="fas fa-bars"></i></span>
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="http://ganskesikkert.no/informasjon.html">
+            <i class="fas fa-info fa-1x" style="margin-left: 3px; margin-right: 9px"></i>
+            Informasjon
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="http://ganskesikkert.no/kontakt.html">
+            <i class="far fa-address-book fa-1x" style="margin-right: 5px"></i>
+            Kontakt
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item" href="http://ganskesikkert.no/personvern.html">
+            <i class="fas fa-user-shield fa-1x" style="margin-right: 5px"></i>
+            Personvern
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button is-white" href="https://www.facebook.com/ganskesikkertnorge">
+                             <span class="icon has-text-primary">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </span>
+            </a>
+            <a class="button is-white" href="https://www.linkedin.com/company/ganskesikkert">
+                            <span class="icon has-text-primary" >
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript">
+  (function() {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('#' + burger.dataset.target);
+    burger.addEventListener('click', function() {
+              burger.classList.toggle('is-active');
+              nav.classList.toggle('is-active');
+            }
+    );
+  })();
+</script>
